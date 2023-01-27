@@ -15,3 +15,9 @@ variable "address_prefixes" {
   description = "The list of address prefixes to use for the subnet."
   default     = []
 }
+
+variable "service_endpoints" {
+  type        = list(string)
+  description = "The list of Service endpoints to associate with the subnet."
+  default     = []
+}

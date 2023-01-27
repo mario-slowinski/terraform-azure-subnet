@@ -26,6 +26,7 @@ Variables
   * `resource_group_name`: The name of the resource group in which to create the subnet.
   * `virtual_network_name`: The name of the virtual network to which to attach the subnet.
   * **`address_prefixes`**: The list of address prefixes used by the subnet.
+  * `service_endpoints`: The list of Service endpoints to associate with the subnet.
 
 Outputs
 --------------

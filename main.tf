@@ -13,4 +13,5 @@ resource "azurerm_subnet" "this" {
   virtual_network_name = length(var.virtual_network_name) > 0 ? var.virtual_network_name : replace(join(var.separator, local.names), " ", "")
   resource_group_name  = length(var.resource_group_name) > 0 ? var.resource_group_name : replace(join(var.separator, local.names), " ", "")
   address_prefixes     = var.address_prefixes
+  service_endpoints    = var.service_endpoints
 }
