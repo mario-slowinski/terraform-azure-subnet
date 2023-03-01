@@ -1,12 +1,7 @@
-azurerm-subnet
-==============
+azure-subnet
+============
 
 Terraform [Azure Virtual Network Subnet](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-extension).
-
-If `var.address_prefixes` is:
-
-* **set** - create resource
-* **not set** - read existing resource data
 
 Required providers
 ------------------
@@ -44,8 +39,8 @@ Examples
 * `main.tf`
 
   ```terraform
-  module "azurerm_subnet" {
-    sources = "github.com/mario-slowinski/terraform-azurerm-subnet"
+  module "azure-subnet" {
+    sources = "github.com/mario-slowinski/terraform-azure-subnet"
   }
   ```
 
